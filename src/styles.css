@@ -1,4 +1,51 @@
-/* You can add global styles to this file, and also import other style files */
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global Body Styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0d0335; /* Fundo escuro */
+    text-align: center;
+  }
+  
+  /* Container Styles */
+  nav {
+    display: flex;
+  }
+  nav p {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    margin-left: 10px;
+    padding-left: 20px;
+  }
+  
+  /* Header */
+  header {
+    color: white;
+  }
+  
+  header h1 {
+    color: white;
+    font-size: 100px;
+    text-transform: uppercase;
+  }
+  
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .movie-card {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .movie-card {
+      width: 100%;
+    }
+  }
+  
