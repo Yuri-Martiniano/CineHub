@@ -1,7 +1,19 @@
+import { enableProdMode } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
+import { provideRouter } from '@angular/router';
+import { provideHttpClient } from '@angular/common/http';
+
 import { AppComponent } from './app/app.component';
-import { config } from './app/app.config.server';
+import { routes } from './app/app.routes';
+import { environment } from './environments/environment';
 
-const bootstrap = () => bootstrapApplication(AppComponent, config);
+if (environment.production) {
+  enableProdMode();
+}
 
-export default bootstrap;
+bootstrapApplication(AppComponent, {
+  providers: [
+    provideRouter(routes),
+    provideHttpClient(),
+  ],
+}).catch((err) => console.error(err));
