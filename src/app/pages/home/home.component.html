@@ -1,0 +1,10 @@
+<div class="home-container">
+    <h1>Bem-vindo ao CineHub</h1>
+    <div class="movies-grid">
+      <div *ngFor="let video of videos" class="movie-card">
+        <h3>{{ video }}</h3>
+        <button (click)="playVideo(video)">Assistir</button>
+      </div>
+    </div>
+  </div>
+  

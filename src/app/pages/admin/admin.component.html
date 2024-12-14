@@ -1,0 +1,20 @@
+<div class="admin-container">
+    <h2>Painel Administrativo</h2>
+    <div class="video-list">
+      <h4>Vídeos</h4>
+      <ul>
+        <li *ngFor="let video of videos">
+          {{ video }}
+          <button (click)="deleteVideo(video)">Excluir</button>
+        </li>
+      </ul>
+    </div>
+    <div class="add-video">
+      <h2>Adicionar Vídeo</h2>
+      <form (ngSubmit)="addVideo()">
+        <input type="text" [(ngModel)]="newVideoName" name="videoName" placeholder="Nome do vídeo" required />
+        <button type="submit">Adicionar</button>
+      </form>
+    </div>
+  </div>
+  

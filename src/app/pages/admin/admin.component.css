@@ -1,0 +1,122 @@
+/* Painel Administrativo - Estilos principais */
+.admin-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  }
+  
+  .admin-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .admin-container h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Lista de Vídeos */
+  .video-list {
+    margin-bottom: 40px;
+  }
+  
+  .video-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .video-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: wheat;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 1.1rem;
+  }
+  
+  .video-list li button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .video-list li button:hover {
+    background-color: #0d0335;
+  }
+  
+  /* Adicionar Vídeo */
+  .add-video {
+
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .add-video h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .add-video form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .add-video input {
+    width: 80%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background-color: #0d0335;
+    border: 1px solid #444;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .add-video input::placeholder {
+    color: #ccc;
+  }
+  
+  .add-video button {
+    padding: 12px 24px;
+    background-color: blue;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80%;
+  }
+  
+  .add-video button:hover {
+    background-color: #0d0335;
+  }
+  
+  /* Estilos Responsivos */
+  @media (max-width: 768px) {
+    .admin-container {
+      padding: 10px;
+    }
+  
+    .video-list li {
+      font-size: 1rem;
+    }
+  
+    .add-video input, .add-video button {
+      width: 100%;
+    }
+  }
+  

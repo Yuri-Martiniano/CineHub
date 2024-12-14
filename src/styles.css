@@ -1,0 +1,34 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global Body Styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0d0335; /* Fundo escuro */
+    text-align: center;
+  }
+  
+  header h1 {
+    color: white;
+    font-size: 100px;
+    text-transform: uppercase;
+  }
+  
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .movie-card {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .movie-card {
+      width: 100%;
+    }
+  }
+  
