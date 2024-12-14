@@ -12,23 +12,6 @@
     text-align: center;
   }
   
-  /* Container Styles */
-  nav {
-    display: flex;
-  }
-  nav p {
-    color: white;
-    text-decoration: none;
-    margin-right: 20px;
-    margin-left: 10px;
-    padding-left: 20px;
-  }
-  
-  /* Header */
-  header {
-    color: white;
-  }
-  
   header h1 {
     color: white;
     font-size: 100px;

@@ -1,8 +1,8 @@
-import { Routes } from '@angular/router';
-import { RouterModule } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './pages/login/login.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AdminComponent } from './pages/admin/admin.component';
+
 
 export const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -11,3 +11,5 @@ export const routes: Routes = [
   { path: 'admin', component: AdminComponent },
   { path: '**', redirectTo: '/login' },
 ];
+
+export const AppRoutingModule = RouterModule.forRoot(routes);
