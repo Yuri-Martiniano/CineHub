@@ -7,10 +7,10 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-// Diretório onde seus vídeos estão armazenados
+
 const videosDirectory = path.join(__dirname, 'D:docker/jellyfin/media');
 
-// Endpoint para listar os vídeos
+
 app.get('/videos', (req, res) => {
     fs.readdir(videosDirectory, (err, files) => {
         if (err) {
@@ -20,7 +20,7 @@ app.get('/videos', (req, res) => {
     });
 });
 
-// Servir arquivos estáticos (vídeos)
+
 app.use('/videos', express.static(videosDirectory));
 
 const PORT = 3000;

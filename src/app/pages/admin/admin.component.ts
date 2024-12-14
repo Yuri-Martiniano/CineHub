@@ -32,12 +32,12 @@ export class AdminComponent implements OnInit {
   }
 
   deleteVideo(video: string) {
-    // Aqui você precisará implementar o endpoint de exclusão no backend
+    
     console.log('Excluindo vídeo:', video);
   }
 
   addVideo() {
-    // Aqui você precisará implementar o endpoint de adição no backend
+    
     console.log('Adicionando vídeo:', this.newVideoName);
     this.newVideoName = '';
   }
