@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(cors());
 
 // Diretório onde seus vídeos estão armazenados
-const videosDirectory = path.join(__dirname, '../public/videos');
+const videosDirectory = path.join(__dirname, 'D:docker/jellyfin/media');
 
 // Endpoint para listar os vídeos
 app.get('/videos', (req, res) => {
